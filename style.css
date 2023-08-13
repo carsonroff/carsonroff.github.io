@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
 }
 
 .header {
@@ -26,6 +27,8 @@ body {
 
 .nav {
   background-color: #f1f1f1;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-list {
@@ -42,6 +45,8 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #333;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list a:hover {
@@ -53,22 +58,22 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-  background-color: #f9f9f9;
+  text-align: left;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-items: center;
 }
 
 .image img {
-  max-width: 100%;
-  max-height: 200px; /* Adjust the height as needed */
-  object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust the height as needed */
 }
 
 .image-text {
@@ -76,13 +81,10 @@ body {
   padding: 20px;
   text-align: left;
   border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
-.image-text-content {
-  flex: 1; /* Expands to fill remaining space */
+.image-text h3 {
+  margin-top: 0;
 }
 
 .empty-section {
@@ -93,4 +95,13 @@ body {
   background-color: #f9f9f9;
   padding: 20px;
   text-align: left;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
 }
