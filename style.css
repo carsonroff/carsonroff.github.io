@@ -66,3 +66,12 @@ body {
 .empty-section {
   height: 100px; /* Adjust the height as needed */
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image {
+  text-align:
